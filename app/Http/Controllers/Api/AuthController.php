@@ -27,13 +27,6 @@ class AuthController extends Controller
             ], 404);
         }
 
-        //login the user...
-        if (!auth()->attempt($request->only('email', 'password'))){
-            return response()->json([
-                'message'=> 'Invalid login details',
-            ], 401);
-        }
-
         //check if the password is correct
         if (!Hash::check($request->password, $user->password)) {
             return response()->json([
@@ -42,7 +35,6 @@ class AuthController extends Controller
             ], 401);
         }
 
-        $user = auth()->user();
         //generate token
         $token = $user->createToken('auth-token')->plainTextToken;
 
@@ -50,6 +42,17 @@ class AuthController extends Controller
             'message' => 'Login Successfully',
             'user' => $user,
             'token' => $token,
+        ], 200);
+    }
+
+    //logout
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+
+        return response()->json([
+          'status' => 'Success',
+          'message' => 'Logged out'
         ], 200);
     }
 }

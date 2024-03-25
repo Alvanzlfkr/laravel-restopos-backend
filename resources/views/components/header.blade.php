@@ -33,7 +33,7 @@
                         class="search-close"><i class="fas fa-times"></i></a>
                 </div>
                 <div class="search-item">
-                    <a href="#">#Stisla</a>
+                    <a href="#">#Dermaga Restoran</a>
                     <a href="#"
                         class="search-close"><i class="fas fa-times"></i></a>
                 </div>
@@ -75,7 +75,7 @@
                         <div class="search-icon bg-danger mr-3 text-white">
                             <i class="fas fa-code"></i>
                         </div>
-                        Stisla Admin Template
+                        Admin
                     </a>
                 </div>
                 <div class="search-item">
@@ -189,7 +189,7 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <div class="dropdown-item-desc">
-                            Template update is available now!
+                            Website update is available now!
                             <div class="time text-primary">2 Min Ago</div>
                         </div>
                     </a>
@@ -229,7 +229,7 @@
                             <i class="fas fa-bell"></i>
                         </div>
                         <div class="dropdown-item-desc">
-                            Welcome to Stisla template!
+                            Welcome to Dermaga Restoran
                             <div class="time">Yesterday</div>
                         </div>
                     </a>
